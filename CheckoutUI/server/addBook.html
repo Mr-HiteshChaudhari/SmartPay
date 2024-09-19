@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add New Book</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <hr>
+        <h1>Add New Book</h1>
+        <hr>
+        <form action="https://automaticbilling.herokuapp.com/books" method="POST">
+            <div class="form-group">
+                <label for="bookId">Book ID</label>
+                <input type="text" class="form-control" name="bookId" placeholder="Enter book ID">
+            </div>
+
+            <div class="form-group">
+                <label for="bookTitle">Title</label>
+                <input type="text" class="form-control" name="title" placeholder="Enter book title">
+            </div>
+
+            <div class="form-group">
+                <label for="bookAuthor">Author</label>
+                <input type="text" class="form-control" name="author" placeholder="Enter book author">
+            </div>
+
+            <div class="form-group">
+                <label for="bookPrice">Price</label>
+                <input type="number" class="form-control" name="price" placeholder="Enter book price">
+            </div>
+
+            <div class="form-group">
+                <label for="bookQuantity">Quantity</label>
+                <input type="number" class="form-control" name="quantity" placeholder="Enter quantity available">
+            </div>
+
+            <div class="form-group">
+                <label for="publisher">Publisher</label>
+                <input type="text" class="form-control" name="publisher" placeholder="Enter book publisher">
+            </div>
+
+            <div class="form-group">
+                <label for="genre">Genre</label>
+                <input type="text" class="form-control" name="genre" placeholder="Enter book genre">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
